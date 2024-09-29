@@ -1,36 +1,75 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Node.js dependencies
 /node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
 
-# testing
-/coverage
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# npm logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# Testing
+/coverage
 
-# vercel
+# Next.js
+/.next/
+/out/
+
+# Build output
+/build
+
+# Production
+/build
+
+# Static builds
+/static
+
+# Misc
+.DS_Store
+Thumbs.db
+*.pem
+
+# Local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
 .vercel
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Parcel-bundler cache (if using Parcel)
+/.cache
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Editor directories and files
+.vscode/*
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# macOS Finder
+.DS_Store
+
+# Ignore node_modules inside any directory
+**/node_modules
